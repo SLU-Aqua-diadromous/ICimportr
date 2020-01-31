@@ -24,6 +24,7 @@
 #'  HI_record(Country = "SE", Year = 2019, SeasonType = "Month", Season = 6, Fleet = "FYK_C",
 #'  AreaType = "SubDiv", FishingArea = "27.d.3.31", UnitEffort = "gd", Effort = NA)
 #'
+#' @export
 HI_record <- function(Country, Year, SeasonType, Season, Fleet, AreaType, FishingArea,
                       DepthRange = NA, UnitEffort, Effort, AreaQualifier = NA) {
   # InterCatch Header information
@@ -73,8 +74,11 @@ HI_record <- function(Country, Year, SeasonType, Season, Fleet, AreaType, Fishin
 #'
 #'
 #' @examples
-#' SI_record(Country = "SE", Year = 2020, SeasonType = "Month", Season = 6, Fleet = "MIS_R",
-#' AreaType = "SubDiv", Fishing Area = "27.d.3.29", Species = "TRS", UnitCATON = "kg", CATON = 16)
+#' SI_record(Country = "SE", Year = 2020, SeasonType = "Month", Season = 6,
+#'  Fleet = "MIS_R", AreaType = "SubDiv", FishingArea = "27.d.3.29",
+#'  Species = "TRS", UnitCATON = "kg", CATON = 16)
+#'
+#' @export
 SI_record <- function(Country, Year, SeasonType, Season, Fleet, AreaType, FishingArea,
                       DepthRange = NA, Species, Stock = NA, CatchCategory = "L",
                       ReportingCategory = "R", DataToFrom = NA, Usage = "H", SamplesOrigin = NA,
@@ -132,6 +136,8 @@ SI_record <- function(Country, Year, SeasonType, Season, Fleet, AreaType, Fishin
 #' SD_record(Country = "SE", Year = 2019, SeasonType = "Month", Season = 7,
 #' Fleet = "FYK_C", AreaType = "Subdiv", FishingArea = "27.d.c.29",
 #' Species = "SAL", CANUMtype = "age", AgeLength = 0,
+#'
+#' @export
 SD_record <- function(Country, Year, SeasonType, Season, Fleet, AreaType, FishingArea,
                       DepthRange = NA, Species, Stock = NA, CatchCategory = "L",
                       ReportingCategory = "R", Sex = "N", CANUMtype, AgeLength,
@@ -140,8 +146,10 @@ SD_record <- function(Country, Year, SeasonType, Season, Fleet, AreaType, Fishin
                       unitMeanWeight, unitCANUM, unitAgeOrLength, UnitMeanLength = "na",
                       Maturity = NA, NumberCaught, MeanWeight, MeanLength = -9,
                       varNumLanded = -9, varWgtLanded = -9, varLgtLanded = -9) {
+  ##
+  ## FIXME: The last four variables are formatted as %d. Should probably be %f but the we get a lot of decimals if we send -9.
   return(
-    sprintf('SD,%s,%d,%s,%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%d,%d,%d,%d,%d,%d,%d,%s,%s,%s,%s,%s,%d,%f,%f,%d,%d,%d',
+    sprintf('SD,%s,%d,%s,%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%d,%d,%d,%d,%d,%d,%d,%s,%s,%s,%s,%s,%d,%f,%d,%d,%d,%d',
             Country, Year, SeasonType, Season, Fleet, AreaType, FishingArea,
             DepthRange = NA, Species, Stock = NA, CatchCategory = "L",
             ReportingCategory = "R", Sex = "N", CANUMtype, AgeLength,
