@@ -6,7 +6,8 @@ fishing_area <- data.frame(
 #
 
 
-fleet_key <- read.csv2("data-raw/fleet_key.csv", stringsAsFactors = FALSE,
-                  fileEncoding = "ISO-8859-1")
+## fleet_key <- read.csv2("data-raw/fleet_key.csv", stringsAsFactors = FALSE,
+##                   fileEncoding = "ISO-8859-1")
+fleet_key <- readxl::read_xlsx("data-raw/fleet_key.xlsx")
 #
 usethis::use_data(fishing_area,fleet_key, overwrite = TRUE)
