@@ -138,7 +138,8 @@ SI_record <- function(Country, Year, SeasonType, Season, Fleet, AreaType, Fishin
 #' Species = "SAL", CANUMtype = "age", AgeLength = 0,
 #'
 #' @export
-SD_record <- function(Country, Year, SeasonType, Season, Fleet, AreaType, FishingArea,
+SD_record <- function(Country, Year, SeasonType, Season, Fleet,
+                      AreaType, FishingArea,
                       DepthRange = NA, Species, Stock = NA, CatchCategory = "L",
                       ReportingCategory = "R", Sex = "N", CANUMtype, AgeLength,
                       PlusGroup = -9, SampledCatch = -9, NumSamplesLngt = -9,
@@ -151,7 +152,7 @@ SD_record <- function(Country, Year, SeasonType, Season, Fleet, AreaType, Fishin
   return(
     sprintf('SD,%s,%d,%s,%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%d,%d,%d,%d,%d,%d,%d,%s,%s,%s,%s,%s,%d,%f,%d,%d,%d,%d',
             Country, Year, SeasonType, Season, Fleet, AreaType, FishingArea,
-            DepthRange = NA, Species, Stock = NA, CatchCategory = "L",
+            DepthRange = NA, Species, Stock = NA, CatchCategory,
             ReportingCategory = "R", Sex = "N", CANUMtype, AgeLength,
             PlusGroup = -9, SampledCatch = -9, NumSamplesLngt = -9,
             NumSamplesMeas = -9, NumSamplesAge = -9, NumAgeMeas = -9,
