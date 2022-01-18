@@ -5,9 +5,6 @@ fishing_area <- data.frame(
                   "27.3.d.31", "27.3.d.32"), stringsAsFactors = FALSE)
 #
 
-
-## fleet_key <- read.csv2("data-raw/fleet_key.csv", stringsAsFactors = FALSE,
-##                   fileEncoding = "ISO-8859-1")
 fleet_key <- readxl::read_xlsx("data-raw/fleet_key.xlsx")
 #
 usethis::use_data(fishing_area,fleet_key, overwrite = TRUE)

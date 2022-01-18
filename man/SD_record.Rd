@@ -113,6 +113,7 @@ Generate One or several Species data (SD) records
 \examples{
 SD_record(Country = "SE", Year = 2019, SeasonType = "Month", Season = 7,
 Fleet = "FYK_C", AreaType = "Subdiv", FishingArea = "27.d.c.29",
-Species = "SAL", CANUMtype = "age", AgeLength = 0,
+Species = "SAL", CANUMtype = "age", AgeLength = 0, unitMeanWeight = "kg",
+unitCANUM = "n", unitAgeOrLength = "year", NumberCaught = 15000, MeanWeight = 4.3)
 
 }

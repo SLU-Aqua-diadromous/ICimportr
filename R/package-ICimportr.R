@@ -7,8 +7,8 @@
 #' conditions but I am open for suggestions.
 #'
 #' @section ICimportr functions:
-#' The ICimportr functions are \code{\link{HI_record()}}, \code{\link{SI_record()}} and
-#' \code{\link{SD_record}}:
+#' The ICimportr functions are \code{\link{HI_record}}, \code{\link{SI_record}} and
+#' \code{\link{SD_record}}
 #'
 #' @docType package
 #' @name ICimportr
