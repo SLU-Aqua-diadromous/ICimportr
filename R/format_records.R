@@ -85,11 +85,11 @@ SI_record <- function(Country, Year, SeasonType, Season, Fleet, AreaType, Fishin
                       QualityFlag = NA, UnitCATON, CATON, OffLandings = -9, varCATON = -9,
                       InfoFleet = NA, InfoStockCoordinator = NA, InfoGeneral = NA) {
   return(
-    sprintf('SI,%s,%d,%s,%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%.1f,%d,%d,%s,%s,%s',
+    sprintf('SI,%s,%d,%s,%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%.4f,%d,%d,%s,%s,%s',
             Country, Year, SeasonType, Season, Fleet, AreaType, FishingArea,
             DepthRange, Species, Stock, CatchCategory,
             ReportingCategory, DataToFrom, Usage, SamplesOrigin,
-            QualityFlag, UnitCATON, round(CATON, 1), OffLandings, varCATON,
+            QualityFlag, UnitCATON, round(CATON, 4), OffLandings, varCATON,
             InfoFleet, InfoStockCoordinator, InfoGeneral))
 }
 
