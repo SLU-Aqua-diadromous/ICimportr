@@ -2,6 +2,7 @@
 % Please edit documentation in R/package-ICimportr.R
 \docType{package}
 \name{ICimportr}
+\alias{ICimportr-package}
 \alias{ICimportr}
 \title{ICimportr: A package helping you in the tedious to create InterCatch import files}
 \description{
@@ -17,3 +18,7 @@ The ICimportr functions are \code{\link{HI_record}}, \code{\link{SI_record}} and
 \code{\link{SD_record}}
 }
 
+\author{
+\strong{Maintainer}: Anders Kagervall \email{anders.kagervall@slu.se} (\href{https://orcid.org/0000-0003-4790-2696}{ORCID})
+
+}
