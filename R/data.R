@@ -2,7 +2,7 @@
 #'
 #' \describe{
 #' \item{SUBDIV}{character, ICES subdivisions in the Baltic sea}
-#' \item{FishingArea}{character, fishing area used in Intercatch}
+#' \item{FishingArea}{character, corresponding fishing area used in Intercatch}
 #' }
 "fishing_area"
 
