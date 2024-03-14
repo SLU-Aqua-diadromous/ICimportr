@@ -5,7 +5,7 @@
 \alias{fishing_area}
 \title{Table to map SUBDIV to FishingArea}
 \format{
-An object of class \code{data.frame} with 12 rows and 2 columns.
+An object of class \code{data.frame} with 15 rows and 2 columns.
 }
 \usage{
 fishing_area
@@ -13,7 +13,7 @@ fishing_area
 \description{
 \describe{
 \item{SUBDIV}{character, ICES subdivisions in the Baltic sea}
-\item{FishingArea}{character, fishing area used in Intercatch}
+\item{FishingArea}{character, corresponding fishing area used in Intercatch}
 }
 }
 \keyword{datasets}
