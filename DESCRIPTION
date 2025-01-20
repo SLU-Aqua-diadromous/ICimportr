@@ -1,6 +1,6 @@
 Package: ICimportr
 Title: Tools to create import files  for ICES InterCatch
-Version: 0.0.1
+Version: 0.2.0
 Authors@R: 
     person(given = "Anders",
            family = "Kagervall",
@@ -11,6 +11,6 @@ Description: Provides tools to create import files  for ICES InterCatch.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
